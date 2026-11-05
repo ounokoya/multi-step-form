@@ -6,7 +6,7 @@ const LAST = 4 // l'étape 5 est le remerciement
 // canLeave(step) : l'étape peut-elle être quittée vers l'avant ? onShow(step) : appelée à chaque affichage
 export function initSteps(form, { canLeave = () => true, onShow = () => {} } = {}) {
   const sections = [...form.querySelectorAll('[data-step]')]
-  const items = [...document.querySelectorAll('[aria-label="Steps"] li')]
+  const items = [...document.querySelectorAll('[data-steps] li')]
   const back = form.querySelector('[data-back]')
   const next = form.querySelector('[data-next]')
   const confirm = form.querySelector('[data-confirm]')

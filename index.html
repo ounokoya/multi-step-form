@@ -17,7 +17,9 @@
   <main class="min-h-screen pb-[72px] md:grid md:place-items-center md:pb-0">
     <div class="md:flex md:h-[600px] md:w-[720px] md:rounded-card md:bg-white md:p-4 md:shadow-card lg:w-[940px]">
       <aside class="sidebar">
-        <ol class="flex justify-center gap-4 pt-8 md:flex-col md:justify-start md:gap-8 md:pt-10 md:pl-8" aria-label="Steps">
+        <!-- Nom de la liste par aria-labelledby : l'outil de FM refuse aria-label sur <ol> (rapport FM R1) -->
+        <p id="steps-title" class="sr-only">Steps</p>
+        <ol class="flex justify-center gap-4 pt-8 md:flex-col md:justify-start md:gap-8 md:pt-10 md:pl-8" aria-labelledby="steps-title" data-steps>
           <li class="step" aria-current="step">
             <span class="step-number">1</span>
             <span class="step-text"><span class="step-label">Step 1</span><span class="step-name">Your info</span></span>
