@@ -56,18 +56,18 @@
 
 /* Groupes d'utilitaires (une classe par élément répété ; mesures de la maquette Penpot) */
 @utility sidebar {
-  height: 172px;
+  height: 10.75rem; /* 172 px */
   background: url("../assets/images/bg-sidebar-mobile.svg") center / cover no-repeat;
   @variant md {
     height: 100%;
-    width: 220px;
+    width: 13.75rem; /* 220 px */
     flex-shrink: 0;
     border-radius: var(--radius-panel);
     background-image: url("../assets/images/bg-sidebar-desktop.svg");
     background-position: left bottom;
   }
   @variant lg {
-    width: 274px;
+    width: 17.125rem; /* 274 px */
   }
 }
 
