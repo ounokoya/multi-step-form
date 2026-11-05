@@ -1,1 +1,55 @@
+/* ADR-0004 : Ubuntu servie avec le site, graisses 400, 500 et 700 seulement */
+@import "@fontsource/ubuntu/400.css";
+@import "@fontsource/ubuntu/500.css";
+@import "@fontsource/ubuntu/700.css";
 @import "tailwindcss";
+
+/* ADR-0003 : tokens de la maquette Penpot — seul endroit du projet où une couleur est écrite */
+@theme {
+  --color-*: initial;
+  --color-blue-950: hsl(213, 96%, 18%);
+  --color-purple-600: hsl(243, 100%, 62%);
+  --color-blue-300: hsl(228, 100%, 84%);
+  --color-blue-200: hsl(206, 94%, 87%);
+  --color-red-500: hsl(354, 84%, 57%);
+  --color-grey-500: hsl(231, 11%, 63%);
+  --color-purple-200: hsl(229, 24%, 87%);
+  --color-blue-100: hsl(218, 100%, 97%);
+  --color-blue-50: hsl(231, 100%, 99%);
+  --color-white: hsl(0, 100%, 100%);
+  --color-grey-text: hsl(231, 11%, 47%);
+  --color-red-text: hsl(354, 84%, 48%);
+  --color-border: hsl(231, 11%, 58%);
+  --color-purple-600-hover: hsl(243, 100%, 68%);
+  --color-blue-950-hover: hsl(213, 72%, 31%);
+
+  --font-sans: "Ubuntu", sans-serif;
+
+  --text-title: 2rem;
+  --text-title--line-height: 2.5rem;
+  --text-title-mobile: 1.5rem;
+  --text-title-mobile--line-height: 2rem;
+  --text-body: 1rem;
+  --text-body--line-height: 1.5625rem;
+  --text-label: 0.875rem;
+  --text-label--line-height: 1.25rem;
+  --text-small: 0.75rem;
+  --text-small--line-height: 1rem;
+  --text-total: 1.25rem;
+  --text-total--line-height: 1.5rem;
+
+  --radius-card: 0.9375rem;
+  --radius-panel: 0.625rem;
+  --radius-control: 0.5rem;
+  --radius-control-mobile: 0.25rem;
+
+  --shadow-card: 0 25px 40px -20px hsl(213 96% 18% / 0.1);
+}
+
+/* A7 / Q-A7 : contour de focus de 2 px décalé de 2 px sur tout élément interactif */
+@layer base {
+  :focus-visible {
+    outline: 2px solid var(--color-purple-600);
+    outline-offset: 2px;
+  }
+}
