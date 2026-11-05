@@ -18,3 +18,13 @@ Les deux correctifs donneraient une v1.0.1, avec un nouveau passage des vérific
 - R1 : liste des étapes nommée par `aria-labelledby` (commit `fix(a11y)`), R2 : tailles en `rem` (commit `fix(css)`) ; 58 / 58 en local et en ligne ; tag `v1.0.1`, redéployé.
 - Vérifications automatiques relancées sur FM : **0 remarque** (Accessibility 0, HTML 0, CSS 0, JavaScript 0).
 - Maquette Penpot inchangée : aucun changement visuel.
+
+## Regénération du rapport (SDL-FM 1.4.0)
+
+| Date | Version relue par FM | Résultat |
+|---|---|---|
+| 2026-11-05 | v1.0.0 (soumission) | Vérifications automatiques : 2 remarques (R1, R2) ; pas de rapport IA (aucun crédit) |
+| 2026-11-05 | v1.0.1 | Vérifications automatiques : 0 remarque |
+| décembre 2026 | v1.0.1 | Rapport IA à demander avec le crédit du mois : priorité 1, car cette solution n'a encore aucun rapport IA (carte de compétences) |
+
+Capture FM juste ; la v1.0.1 ne change pas l'apparence : pas de « Regenerate screenshot ».
