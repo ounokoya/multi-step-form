@@ -85,3 +85,7 @@ Analyse validée telle quelle (`specs/visuel/multi-step-form-analyse.{excalidraw
 | Q-B1 | Mobile, étape 2 annuel : « Monthly » mis en avant | Le libellé en gras suit la période choisie |
 | Q-B2 | Mobile, étape 4 annuel : « Arcade (Monthly) » | « Arcade (Yearly) » |
 | Q-B3 | Total « +$12/mo » / « $120/yr » | Pas de « + » sur le total : « $12/mo », « $120/yr » |
+
+## Validation G3 — maquette Penpot (2026-11-05)
+
+Maquette validée telle quelle (`specs/visuel/penpot/maquette.md`) : 22 écrans dont la proposition tablette (Q9 : structure desktop dans une carte de 720 px), 23 composants, prototype en 3 parcours, seuils visuels calibrés (5 % en desktop ; 5 à 6,1 % en mobile). Exports par SVG + Chromium, l'exportateur PNG de Penpot n'ayant pas la police.

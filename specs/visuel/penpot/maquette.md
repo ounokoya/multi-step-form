@@ -1,6 +1,6 @@
 # Maquette Penpot — Multi-step form
 
-> SDL-FM 1.2.0 Phase 3. Fichier Penpot : « multi-step-form », page « Multi-step form » (nom vérifié avant chaque écriture). En attente de validation (G3).
+> SDL-FM 1.2.0 Phase 3. Fichier Penpot : « multi-step-form », page « Multi-step form » (nom vérifié avant chaque écriture). Validée (G3, 2026-11-05).
 > Décisions G2 appliquées : textes gris (Q-A1), message d'erreur (Q-A2), bordures (Q-A3), forfait choisi en 2 px (Q-A4), « STEP N » en Blue 200 (Q-A5), survol de Confirm (Q-A6), contour de focus clavier (Q-A7), libellé actif selon la période (Q-B1), « Arcade (Yearly) » (Q-B2), total sans « + » (Q-B3).
 
 ## Rendu des exports
