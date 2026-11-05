@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test'
-import { open, field, button, heading, steps, plan, addon, billing, announce, fillStep1, reach, VALID } from './helpers.js'
+import { open, field, button, heading, steps, plan, addon, billing, announce, shown, fillStep1, reach, VALID } from './helpers.js'
 
 // Spec §5 — S5 à S21
 
@@ -81,8 +81,8 @@ test('S13 — interrupteur : prix annuels et « 2 months free »', async ({ page
   await billing(page).click()
 
   await expect(billing(page)).toBeChecked()
-  for (const price of ['$90/yr', '$120/yr', '$150/yr']) await expect(page.getByText(price, { exact: true })).toBeVisible()
-  await expect(page.getByText('2 months free')).toHaveCount(3)
+  for (const price of ['$90/yr', '$120/yr', '$150/yr']) await expect(shown(page, price)).toHaveCount(1)
+  await expect(shown(page, '2 months free')).toHaveCount(3)
 })
 
 test('S14 — groupe radio : flèche droite passe d\'Arcade à Advanced', async ({ page }) => {
@@ -101,19 +101,20 @@ test('S15 — étape 3 sans option : passage à l\'étape 4', async ({ page }) =
 test('S16 — récapitulatif mensuel : forfait, options, total sans « + »', async ({ page }) => {
   await reach(page, 4, { addons: ['Online service', 'Larger storage'] })
   for (const text of ['Arcade (Monthly)', '$9/mo', '+$1/mo', '+$2/mo', 'Total (per month)', '$12/mo']) {
-    await expect(page.getByText(text, { exact: true })).toBeVisible()
+    await expect(shown(page, text)).toHaveCount(1)
   }
-  await expect(page.getByText('Customizable profile')).toBeHidden()
+  await expect(shown(page, 'Customizable profile')).toHaveCount(0)
 })
 
 test('S17 — en annuel : prix des options en /yr, récapitulatif « Arcade (Yearly) », total $120/yr', async ({ page }) => {
   await reach(page, 3, { yearly: true })
-  for (const price of ['+$10/yr', '+$20/yr']) await expect(page.getByText(price, { exact: true }).first()).toBeVisible()
+  await expect(shown(page, '+$10/yr')).toHaveCount(1)
+  await expect(shown(page, '+$20/yr')).toHaveCount(2)
   for (const a of ['Online service', 'Larger storage']) await addon(page, a).check()
   await button(page, 'Next Step').click()
 
   for (const text of ['Arcade (Yearly)', '$90/yr', '+$10/yr', '+$20/yr', 'Total (per year)', '$120/yr']) {
-    await expect(page.getByText(text, { exact: true })).toBeVisible()
+    await expect(shown(page, text)).toHaveCount(1)
   }
 })
 

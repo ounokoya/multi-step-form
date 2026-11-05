@@ -20,6 +20,8 @@ export const plan = (page, name) => page.getByRole('radio', { name: new RegExp(`
 export const addon = (page, name) => page.getByRole('checkbox', { name: new RegExp(`^${name}`, 'i') })
 export const billing = (page) => page.getByRole('switch', { name: 'Yearly billing' })
 export const announce = (page, n) => page.getByRole('status').filter({ hasText: `Step ${n} of 4` })
+// Texte exact et visible : les étapes cachées contiennent les mêmes prix que le récapitulatif
+export const shown = (page, text) => page.getByText(text, { exact: true }).locator('visible=true')
 
 export const VALID = { name: 'Vanessa Mint', email: 'vanessamint@example.com', phone: '+1 234 567 890' }
 
