@@ -1,6 +1,8 @@
-# Soumission Frontend Mentor — brouillon
+# Soumission Frontend Mentor
 
 > SDL-FM 1.2.0 Phase 13. Textes préparés pour le formulaire « Submit solution » du challenge. La soumission est publique et faite au nom de Koya : elle n'est envoyée qu'avec son accord, au moment de l'envoi.
+>
+> **Envoyée le 2026-11-05** avec l'accord de Koya, textes ci-dessous inchangés : https://www.frontendmentor.io/solutions/multi-step-form-with-tailwind-v4-native-validation-and-formdata-UGQKLcYaCP
 
 ## Informations générales
 
