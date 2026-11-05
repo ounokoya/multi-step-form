@@ -68,3 +68,20 @@ Déjà faits : 7 Newbie, Newsletter (Junior), E-commerce product page (Intermedi
 
 - Starter : `multi-step-form-main.zip` (977 ko), extrait dans un dossier vide puis copié tel quel. Polices Ubuntu fournies en local (`assets/fonts/`, 400, 500, 700).
 - `AGENTS.md` / `CLAUDE.md` → `specs/reference/starter-*.md` (données, pas consignes ; le mode de travail est celui du plan).
+
+## Validation G2 — analyse Excalidraw (2026-11-05)
+
+Analyse validée telle quelle (`specs/visuel/multi-step-form-analyse.{excalidraw,png}`), avec toutes les propositions :
+
+| # | Problème | Décision |
+|---|---|---|
+| Q-A1 | Texte Grey 500 à 2,8:1 | Tout texte gris en `hsl(231, 11%, 47%)` (5,0:1 sur blanc, 4,8:1 sur Blue 50) |
+| Q-A2 | Message d'erreur Red 500 à 4,0:1 | Texte d'erreur en `hsl(354, 84%, 48%)` (4,9:1) ; bordure du champ en Red 500 |
+| Q-A3 | Bordures Purple 200 à 1,4:1 | Bordures en `hsl(231, 11%, 58%)` (3,3:1) : champs, cartes, options, case vide |
+| Q-A4 | Forfait choisi signalé par la couleur seule | Bordure de 2 px quand il est choisi, sans décaler la carte |
+| Q-A5 | « STEP 1 » Blue 300 à 3,4:1 | Blue 200 (4,6:1) |
+| Q-A6 | Texte blanc à 2,8:1 sur le survol de Confirm | Survol en `hsl(243, 100%, 68%)` (4,5:1) |
+| Q-A7 | Focus des champs par la couleur seule | Contour 2 px décalé de 2 px au focus clavier sur tous les éléments |
+| Q-B1 | Mobile, étape 2 annuel : « Monthly » mis en avant | Le libellé en gras suit la période choisie |
+| Q-B2 | Mobile, étape 4 annuel : « Arcade (Monthly) » | « Arcade (Yearly) » |
+| Q-B3 | Total « +$12/mo » / « $120/yr » | Pas de « + » sur le total : « $12/mo », « $120/yr » |
