@@ -2,6 +2,14 @@
 
 Format : [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) · Versions : [SemVer](https://semver.org/lang/fr/).
 
+## [1.0.1] — 2026-11-05
+
+Correctifs issus des vérifications automatiques de Frontend Mentor (`specs/analyse/2026-11-05-rapport-fm.md`).
+
+### Fixed
+- La liste des étapes est nommée par `aria-labelledby` au lieu d'`aria-label`, refusé sur `<ol>` par l'outil de FM (R1).
+- Les tailles de la barre d'étapes sont en `rem` au lieu de `px` (R2).
+
 ## [1.0.0] — 2026-11-05
 
 Première version.
