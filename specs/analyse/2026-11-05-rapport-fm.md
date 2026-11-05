@@ -12,3 +12,9 @@
 | R2 | CSS, avertissement : unités absolues (`height: 172px`, `width: 220px`, `width: 274px`) dans `src/style.css` | ✅ Juste | Passer ces 3 valeurs en `rem` (10,75 / 13,75 / 17,125 rem) ; le rendu ne change pas |
 
 Les deux correctifs donneraient une v1.0.1, avec un nouveau passage des vérifications automatiques (« Regenerate report », gratuit pour ces vérifications).
+
+## Suite donnée : v1.0.1 (2026-11-05)
+
+- R1 : liste des étapes nommée par `aria-labelledby` (commit `fix(a11y)`), R2 : tailles en `rem` (commit `fix(css)`) ; 58 / 58 en local et en ligne ; tag `v1.0.1`, redéployé.
+- Vérifications automatiques relancées sur FM : **0 remarque** (Accessibility 0, HTML 0, CSS 0, JavaScript 0).
+- Maquette Penpot inchangée : aucun changement visuel.
